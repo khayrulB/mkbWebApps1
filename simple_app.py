@@ -294,7 +294,7 @@ if __name__ =="__main__":
         st.title("Software for Diabetes Detection: SoftDDR")
         name=st.sidebar.text_input('Enter patient name')
         if not name:
-            st.warning("Please fill out so required fields")
+            st.sidebar.warning("Please fill out so required fields")
         st.write ("""### We need some info to predictict diabetic status""")
     
         a = st.slider("PN", 0.0, 17.0,0.0) # min, max, start
@@ -323,9 +323,6 @@ if __name__ =="__main__":
        
     
 #=============================================================================
-    
-
-
     # Function to load the model 
 
     def load_model():
